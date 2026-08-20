@@ -5,7 +5,6 @@ const experiences = [
   {
     organization: "Google Developers Club, Nile University of Nigeria",
     role: "Head of Community Management",
-    period: "Past",
     points: [
       "Managed community engagement across student developers",
       "Coordinated communication between members and leadership",
@@ -15,7 +14,6 @@ const experiences = [
   {
     organization: "Gallery of Code",
     role: "Social Media Manager",
-    period: "Past",
     points: [
       "Managed social media pages and brand voice",
       "Planned and created content for campaigns",
@@ -25,7 +23,6 @@ const experiences = [
   {
     organization: "Renewables4Africa",
     role: "Social Media Manager",
-    period: "Past",
     points: [
       "Managed brand communication and messaging",
       "Created content for renewable energy awareness",
@@ -35,7 +32,6 @@ const experiences = [
   {
     organization: "Byomane",
     role: "Social Media Management",
-    period: "Current",
     points: [
       "Content strategist for brand storytelling",
       "Audience engagement and community growth",
@@ -68,12 +64,7 @@ export function Experience() {
                 <Briefcase className="h-5 w-5" />
               </span>
               <div className="rounded-2xl border border-border bg-card p-6 shadow-sm transition-all duration-300 hover:shadow-lg">
-                <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
-                  <h3 className="font-display text-xl font-bold">{exp.organization}</h3>
-                  <span className="w-fit rounded-full bg-gold/10 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-gold-dark">
-                    {exp.period}
-                  </span>
-                </div>
+                <h3 className="font-display text-xl font-bold">{exp.organization}</h3>
                 <p className="mt-1 font-medium text-foreground/80">{exp.role}</p>
                 <ul className="mt-4 space-y-2">
                   {exp.points.map((point) => (
