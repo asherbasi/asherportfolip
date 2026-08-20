@@ -22,11 +22,22 @@ export function Navbar() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
+  useEffect(() => {
+    if (open) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [open]);
+
   return (
     <header
       className={cn(
         "fixed left-0 right-0 top-0 z-50 transition-all duration-300",
-        scrolled ? "bg-white/90 shadow-sm backdrop-blur-md" : "bg-transparent",
+        scrolled || open ? "bg-white/95 shadow-sm backdrop-blur-md" : "bg-transparent",
       )}
     >
       <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 lg:px-8">
@@ -53,7 +64,7 @@ export function Navbar() {
         </nav>
 
         <button
-          className="inline-flex h-10 w-10 items-center justify-center rounded-lg text-foreground md:hidden"
+          className="relative z-50 inline-flex h-10 w-10 items-center justify-center rounded-lg text-foreground md:hidden"
           onClick={() => setOpen((v) => !v)}
           aria-label="Toggle menu"
         >
@@ -62,14 +73,14 @@ export function Navbar() {
       </div>
 
       {open && (
-        <div className="border-t border-border bg-white px-4 py-4 md:hidden">
-          <div className="flex flex-col gap-4">
+        <div className="fixed inset-0 top-16 z-40 flex flex-col items-center justify-center bg-white/98 px-6 py-10 backdrop-blur-lg md:hidden">
+          <nav className="flex flex-col items-center gap-6">
             {links.map((link) => (
               <a
                 key={link.href}
                 href={link.href}
                 onClick={() => setOpen(false)}
-                className="text-base font-medium text-muted-foreground transition-colors hover:text-foreground"
+                className="font-display text-2xl font-semibold text-foreground transition-colors hover:text-gold-dark"
               >
                 {link.label}
               </a>
@@ -77,11 +88,11 @@ export function Navbar() {
             <a
               href="#contact"
               onClick={() => setOpen(false)}
-              className="inline-flex items-center justify-center rounded-full bg-primary px-5 py-3 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/90"
+              className="mt-4 inline-flex items-center justify-center rounded-full bg-primary px-8 py-3 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/90"
             >
               Contact Me
             </a>
-          </div>
+          </nav>
         </div>
       )}
     </header>
