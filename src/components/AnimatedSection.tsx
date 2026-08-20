@@ -17,7 +17,7 @@ export function AnimatedSection({ children, className, delay = 0 }: AnimatedSect
 
     const observer = new IntersectionObserver(
       ([entry]) => {
-        if (entry.isIntersecting) {
+        if (entry?.isIntersecting) {
           setVisible(true);
           observer.disconnect();
         }
