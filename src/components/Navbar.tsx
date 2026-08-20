@@ -4,10 +4,10 @@ import { cn } from "@/lib/utils";
 
 const links = [
   { label: "Home", href: "#hero" },
-  { label: "Services", href: "#services" },
+  { label: "About", href: "#about" },
   { label: "Experience", href: "#experience" },
+  { label: "Skills", href: "#skills" },
   { label: "Works", href: "#portfolio" },
-
   { label: "Contact", href: "#contact" },
 ];
 
@@ -56,12 +56,6 @@ export function Navbar() {
                 {link.label}
               </a>
             ))}
-            <a
-              href="#contact"
-              className="inline-flex items-center justify-center rounded-full bg-primary px-5 py-2 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/90"
-            >
-              Contact
-            </a>
           </nav>
 
           <button
@@ -87,13 +81,6 @@ export function Navbar() {
                 {link.label}
               </a>
             ))}
-            <a
-              href="#contact"
-              onClick={() => setOpen(false)}
-              className="mt-4 inline-flex items-center justify-center rounded-full bg-primary px-8 py-3 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/90"
-            >
-              Contact Me
-            </a>
           </nav>
         </div>
       )}

@@ -1,46 +1,34 @@
 import { ArrowUpRight } from "lucide-react";
 import { AnimatedSection } from "@/components/AnimatedSection";
-import socialImg from "@/assets/portfolio-social.png";
-import flyerImg from "@/assets/portfolio-flyer.png";
-import videoImg from "@/assets/portfolio-video.png";
-import engagementImg from "@/assets/portfolio-engagement.png";
 
 const portfolioItems = [
   {
     title: "Social Media Campaign",
     category: "Social Content",
-    image: socialImg,
-    alt: "Social media campaign post cover",
+    accent: "bg-[#e8dfc9]",
+    mark: "01",
     href: "https://www.instagram.com/p/DQhBOX5DI3x/?igsh=dTM0YThuZTM2NGRl",
-    width: 1024,
-    height: 1024,
   },
   {
     title: "Brand Storytelling Post",
     category: "Content Creation",
-    image: flyerImg,
-    alt: "Brand storytelling post cover",
+    accent: "bg-[#dfe4df]",
+    mark: "02",
     href: "https://www.instagram.com/p/DOrM8TpDLch/?igsh=dTBhYnJyZG5oNnlr",
-    width: 1024,
-    height: 1280,
   },
   {
     title: "Carousel Content",
     category: "Social Content",
-    image: videoImg,
-    alt: "Instagram carousel content cover",
+    accent: "bg-[#e4e3df]",
+    mark: "03",
     href: "https://www.instagram.com/p/DN0gzVnWPaj/?img_index=1&igsh=MXNwMHAycmduZm1rYQ==",
-    width: 1280,
-    height: 720,
   },
   {
     title: "GDG Community Event",
     category: "Community Engagement",
-    image: engagementImg,
-    alt: "GDG community engagement event cover",
+    accent: "bg-[#d8e1e3]",
+    mark: "04",
     href: "https://www.instagram.com/p/DQtUeubDGTR/?igsi=encwbnlxeWpwem8y",
-    width: 1024,
-    height: 768,
   },
 ];
 
@@ -65,22 +53,23 @@ export function Portfolio() {
                 rel="noopener noreferrer"
                 className="group relative block overflow-hidden rounded-2xl border border-border bg-card shadow-sm transition-shadow hover:shadow-xl"
               >
-                <img
-                  src={item.image}
-                  alt={item.alt}
-                  width={item.width}
-                  height={item.height}
-                  loading="lazy"
-                  className="aspect-[4/3] w-full object-cover transition-transform duration-500 group-hover:scale-105"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
-                <div className="absolute bottom-0 left-0 right-0 translate-y-4 p-5 opacity-0 transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100">
-                  <p className="text-xs font-semibold uppercase tracking-wide text-gold">
+                <div className={`relative aspect-[4/3] overflow-hidden ${item.accent}`}>
+                  <span className="absolute -right-4 -top-12 font-display text-[12rem] font-bold leading-none text-black/5 transition-transform duration-500 group-hover:scale-110">
+                    {item.mark}
+                  </span>
+                  <div className="absolute bottom-6 left-6 h-16 w-16 rounded-full border border-black/15 bg-white/45" />
+                  <div className="absolute bottom-10 left-10 h-8 w-8 rounded-full bg-gold/80" />
+                  <span className="absolute left-6 top-6 text-xs font-semibold uppercase tracking-[0.2em] text-black/60">
+                    Asher Okwong
+                  </span>
+                </div>
+                <div className="border-t border-border bg-card p-5">
+                  <p className="text-xs font-semibold uppercase tracking-wide text-gold-dark">
                     {item.category}
                   </p>
-                  <h3 className="mt-1 flex items-center gap-1 text-lg font-semibold text-white">
+                  <h3 className="mt-1 flex items-center justify-between gap-1 text-lg font-semibold">
                     {item.title}
-                    <ArrowUpRight className="h-4 w-4" />
+                    <ArrowUpRight className="h-4 w-4 transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
                   </h3>
                 </div>
               </a>

@@ -1,10 +1,11 @@
-import { Briefcase, CheckCircle2 } from "lucide-react";
+import { Briefcase, CircleCheck as CheckCircle2 } from "lucide-react";
 import { AnimatedSection } from "@/components/AnimatedSection";
 
 const experiences = [
   {
     organization: "Google Developers Club, Nile University of Nigeria",
     role: "Head of Community Management",
+    logo: undefined,
     points: [
       "Managed community engagement across student developers",
       "Coordinated communication between members and leadership",
@@ -14,6 +15,7 @@ const experiences = [
   {
     organization: "Gallery of Code",
     role: "Social Media Manager",
+    logo: "/images/logos/image.png",
     points: [
       "Managed social media pages and brand voice",
       "Planned and created content for campaigns",
@@ -23,6 +25,7 @@ const experiences = [
   {
     organization: "Renewables4Africa",
     role: "Social Media Manager",
+    logo: "/images/logos/image copy.png",
     points: [
       "Managed brand communication and messaging",
       "Created content for renewable energy awareness",
@@ -32,6 +35,7 @@ const experiences = [
   {
     organization: "Byomane",
     role: "Social Media Management",
+    logo: "/images/logos/image copy 2.png",
     points: [
       "Content strategist for brand storytelling",
       "Audience engagement and community growth",
@@ -64,8 +68,21 @@ export function Experience() {
                 <Briefcase className="h-5 w-5" />
               </span>
               <div className="rounded-2xl border border-border bg-card p-6 shadow-sm transition-all duration-300 hover:shadow-lg">
-                <h3 className="font-display text-xl font-bold">{exp.organization}</h3>
-                <p className="mt-1 font-medium text-foreground/80">{exp.role}</p>
+                <div className="flex items-start justify-between gap-4">
+                  <div>
+                    <h3 className="font-display text-xl font-bold">{exp.organization}</h3>
+                    <p className="mt-1 font-medium text-foreground/80">{exp.role}</p>
+                  </div>
+                  {exp.logo && (
+                    <div className={`flex h-12 w-16 shrink-0 items-center justify-center overflow-hidden rounded-lg border border-border bg-white ${exp.organization === "Byomane" ? "rounded-full" : ""}`}>
+                      <img
+                        src={exp.logo}
+                        alt={`${exp.organization} logo`}
+                        className={`h-full w-full ${exp.organization === "Byomane" ? "scale-[1.35] object-cover" : "object-contain"}`}
+                      />
+                    </div>
+                  )}
+                </div>
                 <ul className="mt-4 space-y-2">
                   {exp.points.map((point) => (
                     <li
