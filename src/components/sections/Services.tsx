@@ -32,10 +32,11 @@ const services = [
     description: "Friendly, professional support that turns inquiries into loyalty.",
   },
   {
-    title: "Lead Routing",
+    title: "Content Creation",
     icon: Route,
-    description: "Capture and direct qualified leads to the right team for conversion.",
+    description: "Original posts, visuals, and copy crafted to spark conversation.",
   },
+
   {
     title: "Content Planning",
     icon: Calendar,
