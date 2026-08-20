@@ -3,7 +3,7 @@ import {
   Share2,
   MessageCircle,
   Headphones,
-  Route,
+  PenLine,
   Calendar,
   Palette,
   Clapperboard,
@@ -32,10 +32,11 @@ const services = [
     description: "Friendly, professional support that turns inquiries into loyalty.",
   },
   {
-    title: "Lead Routing",
-    icon: Route,
-    description: "Capture and direct qualified leads to the right team for conversion.",
+    title: "Content Creation",
+    icon: PenLine,
+    description: "Original posts, visuals, and copy crafted to spark conversation.",
   },
+
   {
     title: "Content Planning",
     icon: Calendar,
