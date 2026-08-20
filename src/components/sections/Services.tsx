@@ -3,7 +3,7 @@ import {
   Share2,
   MessageCircle,
   Headphones,
-  Route,
+  PenLine,
   Calendar,
   Palette,
   Clapperboard,
@@ -33,7 +33,7 @@ const services = [
   },
   {
     title: "Content Creation",
-    icon: Route,
+    icon: PenLine,
     description: "Original posts, visuals, and copy crafted to spark conversation.",
   },
 
