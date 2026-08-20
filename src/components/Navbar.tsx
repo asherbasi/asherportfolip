@@ -26,14 +26,11 @@ export function Navbar() {
     <header
       className={cn(
         "fixed left-0 right-0 top-0 z-50 transition-all duration-300",
-        scrolled ? "bg-white/90 shadow-sm backdrop-blur-md" : "bg-transparent"
+        scrolled ? "bg-white/90 shadow-sm backdrop-blur-md" : "bg-transparent",
       )}
     >
       <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 lg:px-8">
-        <a
-          href="#hero"
-          className="font-display text-xl font-bold tracking-tight text-foreground"
-        >
+        <a href="#hero" className="font-display text-xl font-bold tracking-tight text-foreground">
           Asher Okwong
         </a>
 

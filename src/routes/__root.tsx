@@ -78,10 +78,18 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       { title: "Asher Okwong | Social Media & Community Manager" },
-      { name: "description", content: "Portfolio of Asher Okwong — Social Media & Community Manager helping brands build meaningful online communities." },
+      {
+        name: "description",
+        content:
+          "Portfolio of Asher Okwong — Social Media & Community Manager helping brands build meaningful online communities.",
+      },
       { name: "author", content: "Asher Okwong" },
       { property: "og:title", content: "Asher Okwong | Social Media & Community Manager" },
-      { property: "og:description", content: "Portfolio of Asher Okwong — Social Media & Community Manager helping brands build meaningful online communities." },
+      {
+        property: "og:description",
+        content:
+          "Portfolio of Asher Okwong — Social Media & Community Manager helping brands build meaningful online communities.",
+      },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:site", content: "@asher3in1" },

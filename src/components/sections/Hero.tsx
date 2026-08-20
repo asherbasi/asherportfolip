@@ -4,10 +4,7 @@ import profileImg from "@/assets/profile.png";
 
 export function Hero() {
   return (
-    <section
-      id="hero"
-      className="relative flex min-h-screen items-center overflow-hidden pt-20"
-    >
+    <section id="hero" className="relative flex min-h-screen items-center overflow-hidden pt-20">
       <div
         className="pointer-events-none absolute inset-0 -z-10"
         style={{
@@ -25,8 +22,8 @@ export function Hero() {
             Asher Okwong
           </h1>
           <p className="mt-6 max-w-xl text-lg leading-relaxed text-muted-foreground">
-            Helping brands build meaningful online communities, engage audiences,
-            and turn conversations into loyal customers.
+            Helping brands build meaningful online communities, engage audiences, and turn
+            conversations into loyal customers.
           </p>
           <div className="mt-8 flex flex-wrap items-center gap-4">
             <a
