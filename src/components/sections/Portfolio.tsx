@@ -1,4 +1,4 @@
-import { ArrowUpRight, Instagram, Play } from "lucide-react";
+import { ArrowUpRight, Facebook, Instagram, Play } from "lucide-react";
 import { AnimatedSection } from "@/components/AnimatedSection";
 
 type Project = {
@@ -58,8 +58,9 @@ const portfolioItems: Project[] = [
     title: "Edited Video for Product Shoot",
     description: "A short-form product edit shaped for clear presentation and social engagement.",
     category: "Video Editing",
-    platform: "Instagram",
+    platform: "Instagram / Facebook",
     accent: "bg-[#dcd3e3]",
+    image: "/images/portfolio/image copy 4.png",
     mark: "05",
     href: "https://www.instagram.com/reel/DcRp55TIne7/?igsi=M3p1bHFkbTVkb2w4",
     cta: "View Edit",
@@ -68,8 +69,9 @@ const portfolioItems: Project[] = [
     title: "Edited Video for Product Shoot",
     description: "A polished product video edit focused on rhythm, transitions, and visual clarity.",
     category: "Video Editing",
-    platform: "Instagram",
+    platform: "Instagram / Facebook",
     accent: "bg-[#d3dce3]",
+    image: "/images/portfolio/image copy 5.png",
     mark: "06",
     href: "https://www.instagram.com/reel/DcRlU8Xoorm/?igsi=dHFxM3Q5MGl4dTlq",
     cta: "View Edit",
@@ -128,6 +130,7 @@ export function Portfolio() {
                     {item.platform && (
                       <span className="inline-flex items-center gap-1 rounded-full border border-border px-2 py-0.5 text-[10px] font-medium uppercase tracking-wide text-muted-foreground">
                         <Instagram className="h-3 w-3" />
+                        <Facebook className="h-3 w-3" />
                         {item.platform}
                       </span>
                     )}
