@@ -11,7 +11,7 @@ export function AboutMe() {
         </AnimatedSection>
         <AnimatedSection delay={100} className="mt-10 space-y-5 text-center text-base leading-relaxed text-muted-foreground md:text-lg">
           <p>Hi, I’m Asher. I’m a Social Media and Community Manager with experience helping brands and communities communicate, engage, and grow online.</p>
-          <p>I’ve managed social media for organizations including Gallery of Code and Renewables4Africa, currently support Byomane&apos;s social media presence, and previously served as Head of Community Management at Google Developers Club, Nile University of Nigeria.</p>
+          <p>I’ve managed social media for organizations including Gallery of Code, currently support Byomane&apos;s social media presence, and previously served as Head of Community Management at Google Developers Club, Nile University of Nigeria.</p>
           <p>I enjoy being the person behind the conversations — responding to audiences, understanding what they need, maintaining a brand&apos;s voice, and making sure the right people get connected.</p>
         </AnimatedSection>
       </div>
