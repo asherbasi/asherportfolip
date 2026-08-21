@@ -23,16 +23,6 @@ const experiences = [
     ],
   },
   {
-    organization: "Renewables4Africa",
-    role: "Social Media Manager",
-    logo: "/images/logos/image copy.png",
-    points: [
-      "Managed brand communication and messaging",
-      "Created content for renewable energy awareness",
-      "Increased audience engagement and reach",
-    ],
-  },
-  {
     organization: "Byomane",
     role: "Social Media Management",
     logo: "/images/logos/image copy 2.png",
@@ -40,6 +30,26 @@ const experiences = [
       "Content strategist for brand storytelling",
       "Audience engagement and community growth",
       "Day-to-day social media support",
+    ],
+  },
+  {
+    organization: "Kiddies Delight Store",
+    role: "Content Shoot, Videography & Video Editing",
+    logo: "/images/logos/image copy 4.png",
+    points: [
+      "Planned and captured product content shoots",
+      "Created engaging video content for the brand",
+      "Edited video assets for social media use",
+    ],
+  },
+  {
+    organization: "Skyline International Tourism and Hospitality Limited",
+    role: "Call Center & Customer Support, IT Support",
+    logo: "/images/logos/image copy 3.png",
+    points: [
+      "Handled customer inquiries and call center communication",
+      "Supported customers with clear, professional service",
+      "Provided day-to-day technical support when needed",
     ],
   },
 ];
@@ -52,17 +62,17 @@ export function Experience() {
           <h2 className="font-display text-3xl font-bold md:text-4xl">Experience</h2>
           <div className="mx-auto mt-4 h-1 w-16 rounded-full bg-gold" />
           <p className="mt-4 text-muted-foreground">
-            A track record of managing communities, creating content, and driving engagement.
+            A track record of managing communities, creating content, supporting customers, and solving problems.
           </p>
         </AnimatedSection>
 
         <div className="relative mx-auto max-w-3xl">
-          <div className="absolute left-6 top-0 bottom-0 w-px bg-border" />
+          <div className="absolute bottom-0 left-6 top-0 w-px bg-border" />
           {experiences.map((exp, index) => (
             <AnimatedSection
               key={exp.organization}
               delay={index * 100}
-              className="relative mb-10 pl-20"
+              className="relative mb-10 pl-20 last:mb-0"
             >
               <span className="absolute left-0 top-0 flex h-12 w-12 items-center justify-center rounded-full bg-primary text-primary-foreground shadow-sm">
                 <Briefcase className="h-5 w-5" />
@@ -74,21 +84,18 @@ export function Experience() {
                     <p className="mt-1 font-medium text-foreground/80">{exp.role}</p>
                   </div>
                   {exp.logo && (
-                    <div className={`flex h-12 w-16 shrink-0 items-center justify-center overflow-hidden rounded-lg border border-border bg-white ${exp.organization === "Byomane" ? "rounded-full" : ""}`}>
+                    <div className="flex h-14 w-20 shrink-0 items-center justify-center overflow-hidden rounded-lg border border-border bg-white p-1">
                       <img
                         src={exp.logo}
                         alt={`${exp.organization} logo`}
-                        className={`h-full w-full ${exp.organization === "Byomane" ? "scale-[1.35] object-cover" : "object-contain"}`}
+                        className="max-h-full max-w-full object-contain"
                       />
                     </div>
                   )}
                 </div>
                 <ul className="mt-4 space-y-2">
                   {exp.points.map((point) => (
-                    <li
-                      key={point}
-                      className="flex items-start gap-2 text-sm text-muted-foreground"
-                    >
+                    <li key={point} className="flex items-start gap-2 text-sm text-muted-foreground">
                       <CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-gold" />
                       {point}
                     </li>
