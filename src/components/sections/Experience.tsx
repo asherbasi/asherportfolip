@@ -5,7 +5,7 @@ const experiences = [
   {
     organization: "Google Developers Club, Nile University of Nigeria",
     role: "Head of Community Management",
-    logo: undefined,
+    logo: "/images/logos/image copy 5.png",
     points: [
       "Managed community engagement across student developers",
       "Coordinated communication between members and leadership",

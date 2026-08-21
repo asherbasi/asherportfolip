@@ -10,48 +10,53 @@ type Project = {
   mark: string;
   href: string;
   cta: string;
+  image?: string;
 };
 
 const portfolioItems: Project[] = [
   {
-    title: "Social Media Campaign",
-    description: "A targeted social campaign designed to boost visibility and drive audience interaction.",
+    title: "Carousel for Gallery of Code",
+    description: "A multi-slide carousel created for a Gallery of Code program and its audience.",
     category: "Social Content",
-    accent: "bg-[#e8dfc9]",
+    accent: "bg-[#e4e3df]",
     mark: "01",
-    href: "https://www.instagram.com/p/DQhBOX5DI3x/?igsh=dTM0YThuZTM2NGRl",
+    href: "https://www.instagram.com/p/DN0gzVnWPaj/?img_index=1&igsh=MXNwMHAycmduZm1rYQ==",
     cta: "View Project",
+    image: "/images/portfolio/image copy 3.png",
   },
   {
-    title: "Brand Storytelling Post",
-    description: "A crafted brand post that uses storytelling to connect with the audience.",
+    title: "Brand Storytelling",
+    description: "A visual storytelling post created to connect Gallery of Code with its audience.",
     category: "Content Creation",
     accent: "bg-[#dfe4df]",
     mark: "02",
     href: "https://www.instagram.com/p/DOrM8TpDLch/?igsh=dTBhYnJyZG5oNnlr",
     cta: "View Project",
+    image: "/images/portfolio/image copy 2.png",
   },
   {
-    title: "Carousel Content",
-    description: "A multi-slide carousel created to deliver a clear, scannable message.",
-    category: "Social Content",
-    accent: "bg-[#e4e3df]",
+    title: "Brand Storytelling",
+    description: "A bold brand story designed to communicate an idea through strong visual direction.",
+    category: "Content Creation",
+    accent: "bg-[#e8dfc9]",
     mark: "03",
-    href: "https://www.instagram.com/p/DN0gzVnWPaj/?img_index=1&igsh=MXNwMHAycmduZm1rYQ==",
+    href: "https://www.instagram.com/p/DQhBOX5DI3x/?igsh=dTM0YThuZTM2NGRl",
     cta: "View Project",
+    image: "/images/portfolio/image copy.png",
   },
   {
     title: "GDG Community Event",
-    description: "Community event coverage highlighting engagement and participation.",
+    description: "Event coverage highlighting the Git and GitHub Workshop community experience.",
     category: "Community Engagement",
     accent: "bg-[#d8e1e3]",
     mark: "04",
     href: "https://www.instagram.com/p/DQtUeubDGTR/?igsi=encwbnlxeWpwem8y",
     cta: "View Project",
+    image: "/images/portfolio/image.png",
   },
   {
-    title: "Reel Edit — Kiddies Delight",
-    description: "A short-form Instagram Reel edited to showcase the brand with a polished finish.",
+    title: "Edited Video for Product Shoot",
+    description: "A short-form product edit shaped for clear presentation and social engagement.",
     category: "Video Editing",
     platform: "Instagram",
     accent: "bg-[#dcd3e3]",
@@ -60,8 +65,8 @@ const portfolioItems: Project[] = [
     cta: "View Edit",
   },
   {
-    title: "Reel Edit — Product Highlight",
-    description: "A tightly edited Instagram Reel focused on clean transitions and product focus.",
+    title: "Edited Video for Product Shoot",
+    description: "A polished product video edit focused on rhythm, transitions, and visual clarity.",
     category: "Video Editing",
     platform: "Instagram",
     accent: "bg-[#d3dce3]",
@@ -83,9 +88,9 @@ export function Portfolio() {
           </p>
         </AnimatedSection>
 
-        <div className="grid grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {portfolioItems.map((item, index) => (
-            <AnimatedSection key={item.title} delay={index * 80}>
+            <AnimatedSection key={`${item.title}-${item.mark}`} delay={index * 80}>
               <a
                 href={item.href}
                 target="_blank"
@@ -93,19 +98,22 @@ export function Portfolio() {
                 className="group flex h-full flex-col overflow-hidden rounded-2xl border border-border bg-card shadow-sm transition-shadow hover:shadow-xl"
               >
                 <div className={`relative aspect-[4/3] overflow-hidden ${item.accent}`}>
-                  <span className="absolute -right-4 -top-12 font-display text-[12rem] font-bold leading-none text-black/5 transition-transform duration-500 group-hover:scale-110">
-                    {item.mark}
-                  </span>
-                  {item.platform === "Instagram" ? (
-                    <div className="absolute inset-0 flex items-center justify-center">
-                      <div className="flex h-14 w-14 items-center justify-center rounded-full bg-white/70 shadow-sm transition-transform duration-300 group-hover:scale-110">
-                        <Play className="h-6 w-6 translate-x-0.5 fill-black text-black" />
-                      </div>
-                    </div>
+                  {item.image ? (
+                    <img
+                      src={item.image}
+                      alt={`${item.title} project cover`}
+                      className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                    />
                   ) : (
                     <>
-                      <div className="absolute bottom-6 left-6 h-16 w-16 rounded-full border border-black/15 bg-white/45" />
-                      <div className="absolute bottom-10 left-10 h-8 w-8 rounded-full bg-gold/80" />
+                      <span className="absolute -right-4 -top-12 font-display text-[12rem] font-bold leading-none text-black/5 transition-transform duration-500 group-hover:scale-110">
+                        {item.mark}
+                      </span>
+                      <div className="absolute inset-0 flex items-center justify-center">
+                        <div className="flex h-14 w-14 items-center justify-center rounded-full bg-white/70 shadow-sm transition-transform duration-300 group-hover:scale-110">
+                          <Play className="h-6 w-6 translate-x-0.5 fill-black text-black" />
+                        </div>
+                      </div>
                     </>
                   )}
                   <span className="absolute left-6 top-6 text-xs font-semibold uppercase tracking-[0.2em] text-black/60">
@@ -113,7 +121,7 @@ export function Portfolio() {
                   </span>
                 </div>
                 <div className="flex flex-1 flex-col border-t border-border bg-card p-5">
-                  <div className="flex items-center gap-2">
+                  <div className="flex flex-wrap items-center gap-2">
                     <p className="text-xs font-semibold uppercase tracking-wide text-gold-dark">
                       {item.category}
                     </p>
