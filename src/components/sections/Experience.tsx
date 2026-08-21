@@ -79,16 +79,16 @@ export function Experience() {
               </span>
               <div className="rounded-2xl border border-border bg-card p-6 shadow-sm transition-all duration-300 hover:shadow-lg">
                 <div className="flex items-start justify-between gap-4">
-                  <div>
+                  <div className="min-w-0 flex-1">
                     <h3 className="font-display text-xl font-bold">{exp.organization}</h3>
                     <p className="mt-1 font-medium text-foreground/80">{exp.role}</p>
                   </div>
                   {exp.logo && (
-                    <div className="flex h-14 w-20 shrink-0 items-center justify-center overflow-hidden rounded-lg border border-border bg-white p-1">
+                    <div className="flex h-10 w-14 shrink-0 items-center justify-center overflow-hidden rounded-md border border-border bg-white p-1">
                       <img
                         src={exp.logo}
                         alt={`${exp.organization} logo`}
-                        className="max-h-full max-w-full object-contain"
+                        className="h-full w-full object-contain"
                       />
                     </div>
                   )}
