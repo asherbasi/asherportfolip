@@ -37,10 +37,27 @@ export function Contact() {
     <section id="contact" className="bg-primary py-24 text-primary-foreground">
       <div className="mx-auto max-w-7xl px-4 lg:px-8">
         <AnimatedSection className="mx-auto mb-16 max-w-2xl text-center">
-          <h2 className="font-display text-3xl font-bold md:text-4xl">Get in Touch</h2>
+          <h2 className="font-display text-3xl font-bold md:text-4xl">
+            Let&apos;s make your brand impossible to ignore.
+          </h2>
           <p className="mt-4 text-primary-foreground/70">
-            Ready to grow your community? Let&apos;s start a conversation.
+            Looking for someone to manage your social media, create content, or help shape your
+            digital presence? Let&apos;s talk.
           </p>
+          <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
+            <a
+              href="mailto:imaabasiokwong8@gmail.com"
+              className="inline-flex items-center justify-center rounded-full bg-gold px-7 py-3 text-sm font-semibold text-black transition-all hover:bg-gold/90 hover:shadow-lg"
+            >
+              Work With Me
+            </a>
+            <a
+              href="#portfolio"
+              className="inline-flex items-center justify-center rounded-full border border-primary-foreground/30 px-7 py-3 text-sm font-semibold text-primary-foreground transition-all hover:border-primary-foreground/60"
+            >
+              View My Work
+            </a>
+          </div>
         </AnimatedSection>
 
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">

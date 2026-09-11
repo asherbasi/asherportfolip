@@ -83,10 +83,10 @@ export function Portfolio() {
     <section id="portfolio" className="bg-muted/30 py-24">
       <div className="mx-auto max-w-7xl px-4 lg:px-8">
         <AnimatedSection className="mx-auto mb-16 max-w-2xl text-center">
-          <h2 className="font-display text-3xl font-bold md:text-4xl">Works</h2>
+          <h2 className="font-display text-3xl font-bold md:text-4xl">Creative Work</h2>
           <div className="mx-auto mt-4 h-1 w-16 rounded-full bg-gold" />
           <p className="mt-4 text-muted-foreground">
-            Selected social content, community campaigns, and video editing highlights.
+            A selection of reels, short-form videos, carousels, and campaign creatives.
           </p>
         </AnimatedSection>
 
