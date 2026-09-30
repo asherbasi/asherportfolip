@@ -3,6 +3,47 @@ import { AnimatedSection } from "@/components/AnimatedSection";
 
 const experiences = [
   {
+    organization: "Byomane",
+    role: "Social Media Manager",
+    logo: "/images/logos/image copy 2.png",
+    points: [
+      "Build growth strategies grounded in audience research",
+      "Plan and publish content that drives awareness, engagement and enquiries",
+      "Track performance and adjust content direction",
+    ],
+  },
+  {
+    organization: "MOPO Project, Tilk House",
+    role: "Social Media Manager (Contract)",
+    logo: "/images/logos/placeholder-mopo.png",
+    points: [
+      "Ran a paid social campaign that generated 350+ leads in two weeks",
+      "Planned and executed supporting content",
+      "Used performance data to improve results",
+    ],
+  },
+  {
+    organization: "Renewables4Africa",
+    role: "Social Media Manager",
+    logo: "/images/logos/placeholder-r4a.png",
+    points: [
+      "Manage social for a pan-African renewable energy platform",
+      "Turn technical clean energy topics into accessible educational content",
+      "Grow a community of energy professionals and advocates",
+    ],
+  },
+  {
+    organization: "Gallery of Code",
+    role: "Social Media Manager",
+    logo: "/images/logos/image.png",
+    points: [
+      "Manage all social channels for Africa's first transdisciplinary design lab",
+      "Led digital content for the EU-partnered AI + Arts Week",
+      "Turn AI, IoT and robotics topics into engaging stories",
+      "Produce monthly analytics reports",
+    ],
+  },
+  {
     organization: "Google Developers Club, Nile University of Nigeria",
     role: "Head of Community Management",
     logo: "/images/logos/image copy 5.png",
@@ -13,26 +54,6 @@ const experiences = [
     ],
   },
   {
-    organization: "Gallery of Code",
-    role: "Social Media Manager",
-    logo: "/images/logos/image.png",
-    points: [
-      "Managed social media pages and brand voice",
-      "Planned and created content for campaigns",
-      "Engaged audiences and grew online presence",
-    ],
-  },
-  {
-    organization: "Byomane",
-    role: "Social Media Management",
-    logo: "/images/logos/image copy 2.png",
-    points: [
-      "Content strategist for brand storytelling",
-      "Audience engagement and community growth",
-      "Day-to-day social media support",
-    ],
-  },
-  {
     organization: "Kiddies Delight Store",
     role: "Content Shoot, Videography & Video Editing",
     logo: "/images/logos/image copy 4.png",
@@ -40,16 +61,6 @@ const experiences = [
       "Planned and captured product content shoots",
       "Created engaging video content for the brand",
       "Edited video assets for social media use",
-    ],
-  },
-  {
-    organization: "Skyline International Tourism and Hospitality Limited",
-    role: "Call Center & Customer Support, IT Support",
-    logo: "/images/logos/image copy 3.png",
-    points: [
-      "Handled customer inquiries and call center communication",
-      "Supported customers with clear, professional service",
-      "Provided day-to-day technical support when needed",
     ],
   },
 ];

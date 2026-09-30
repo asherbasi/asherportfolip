@@ -1,4 +1,4 @@
-import { Mail, Linkedin, Instagram, Phone } from "lucide-react";
+import { Mail, Linkedin, Instagram, Phone, Download } from "lucide-react";
 import { AnimatedSection } from "@/components/AnimatedSection";
 
 const contacts = [
@@ -63,6 +63,17 @@ export function Contact() {
             </AnimatedSection>
           ))}
         </div>
+
+        <AnimatedSection delay={400} className="mt-12 text-center">
+          <a
+            href="/Ima-Abasi_Okwong_CV.pdf"
+            download
+            className="inline-flex items-center justify-center gap-2 rounded-full bg-gold px-7 py-3 text-sm font-semibold text-black transition-all hover:bg-gold-dark hover:text-white hover:shadow-lg"
+          >
+            <Download className="h-4 w-4" />
+            Download CV
+          </a>
+        </AnimatedSection>
       </div>
     </section>
   );

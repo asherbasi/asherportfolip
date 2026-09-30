@@ -10,7 +10,7 @@ Hero Section
 
 Name: Asher Okwong
 
-Title: Social Media & Community Manager
+Title: Social Media Manager
 
 Short description:
 "Helping brands build meaningful online communities, engage audiences, and turn conversations into loyal customers."

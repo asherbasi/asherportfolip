@@ -15,17 +15,16 @@ export function Hero() {
       <div className="mx-auto w-full max-w-4xl px-4 py-20 text-center lg:px-8">
         <AnimatedSection>
           <span className="inline-block rounded-full bg-gold/10 px-3 py-1 text-xs font-semibold uppercase tracking-widest text-gold-dark">
-            Social Media & Community Manager
+            Social Media Manager
           </span>
           <h1 className="mt-6 font-display text-5xl font-bold leading-[1.1] tracking-tight md:text-6xl lg:text-7xl">
             Asher Okwong
           </h1>
           <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-muted-foreground">
-            I help brands manage their online presence, engage their audience, and turn everyday
-            conversations into meaningful customer connections.
+            I build brand communities and run social campaigns that turn attention into leads.
           </p>
           <p className="mt-5 text-sm font-medium tracking-wide text-foreground/70">
-            Social Media Management • Community Management • Customer Engagement
+            Social Media Management • Content Strategy • Paid Social
           </p>
           <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
             <a
@@ -35,12 +34,23 @@ export function Hero() {
               Contact Me
             </a>
             <a
-              href="#portfolio"
+              href="#results"
               className="inline-flex items-center justify-center gap-2 rounded-full border border-border bg-card px-7 py-3 text-sm font-semibold text-foreground transition-all hover:border-gold hover:text-gold-dark"
             >
-              View Works
+              View Results
               <ArrowDown className="h-4 w-4" />
             </a>
+          </div>
+          <div className="mt-6 flex flex-wrap items-center justify-center gap-3">
+            <span className="inline-flex items-center rounded-full bg-gold/10 px-4 py-1.5 text-xs font-semibold text-gold-dark">
+              350+ leads in 2 weeks
+            </span>
+            <span className="inline-flex items-center rounded-full bg-gold/10 px-4 py-1.5 text-xs font-semibold text-gold-dark">
+              4 brands managed
+            </span>
+            <span className="inline-flex items-center rounded-full bg-gold/10 px-4 py-1.5 text-xs font-semibold text-gold-dark">
+              Organic + paid social
+            </span>
           </div>
         </AnimatedSection>
       </div>

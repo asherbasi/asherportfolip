@@ -2,6 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { Navbar } from "@/components/Navbar";
 import { Hero } from "@/components/sections/Hero";
 import { AboutMe } from "@/components/sections/AboutMe";
+import { Results } from "@/components/sections/Results";
 import { Experience } from "@/components/sections/Experience";
 import { Services } from "@/components/sections/Services";
 import { Portfolio } from "@/components/sections/Portfolio";
@@ -11,20 +12,20 @@ import { Footer } from "@/components/Footer";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Asher Okwong | Social Media & Community Manager" },
+      { title: "Asher Okwong | Social Media Manager" },
       {
         name: "description",
         content:
-          "Portfolio of Asher Okwong, a Social Media & Community Manager helping brands build meaningful online communities.",
+          "Portfolio of Asher Okwong, a Social Media Manager helping brands build communities and run social campaigns that turn attention into leads.",
       },
       {
         property: "og:title",
-        content: "Asher Okwong | Social Media & Community Manager",
+        content: "Asher Okwong | Social Media Manager",
       },
       {
         property: "og:description",
         content:
-          "Portfolio of Asher Okwong, a Social Media & Community Manager helping brands build meaningful online communities.",
+          "Portfolio of Asher Okwong, a Social Media Manager helping brands build communities and run social campaigns that turn attention into leads.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -40,6 +41,7 @@ function Index() {
       <main>
         <Hero />
         <AboutMe />
+        <Results />
         <Experience />
         <Services />
         <Portfolio />
