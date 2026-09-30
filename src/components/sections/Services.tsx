@@ -1,32 +1,30 @@
 import {
-  Users,
   Share2,
-  MessageCircle,
-  Headphones,
   PenLine,
   Calendar,
   Palette,
   Clapperboard,
   Camera,
-  Wrench,
+  Target,
+  BarChart3,
 } from "lucide-react";
 import { AnimatedSection } from "@/components/AnimatedSection";
 
 const skills = [
-  {
-    title: "Community Management",
-    icon: Users,
-    description: "Build, nurture, and grow engaged online communities around your brand.",
-  },
   {
     title: "Social Media Management",
     icon: Share2,
     description: "Manage social channels with a consistent voice, strategy, and purpose.",
   },
   {
-    title: "Customer Engagement",
-    icon: MessageCircle,
-    description: "Create thoughtful conversations that help audiences feel heard and valued.",
+    title: "Paid Social Campaigns",
+    icon: Target,
+    description: "Campaign setup, targeting, A/B testing and performance tracking.",
+  },
+  {
+    title: "Analytics & Reporting",
+    icon: BarChart3,
+    description: "Monthly reporting and data-driven content decisions.",
   },
   {
     title: "Videography",
@@ -42,16 +40,6 @@ const skills = [
     title: "Content Creation",
     icon: PenLine,
     description: "Develop original posts, visuals, and copy that spark conversation.",
-  },
-  {
-    title: "Customer Support",
-    icon: Headphones,
-    description: "Deliver friendly, professional support that turns inquiries into loyalty.",
-  },
-  {
-    title: "IT Support",
-    icon: Wrench,
-    description: "Provide practical technical assistance and clear guidance when needed.",
   },
   {
     title: "Graphic Design",
@@ -73,7 +61,7 @@ export function Services() {
           <h2 className="font-display text-3xl font-bold md:text-4xl">Skills</h2>
           <div className="mx-auto mt-4 h-1 w-16 rounded-full bg-gold" />
           <p className="mt-4 text-muted-foreground">
-            A focused set of social, creative, customer-facing, and technical skills.
+            A focused set of social, creative, campaign, and reporting skills.
           </p>
         </AnimatedSection>
 

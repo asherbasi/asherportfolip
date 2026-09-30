@@ -25,7 +25,7 @@ const experiences = [
   {
     organization: "Renewables4Africa",
     role: "Social Media Manager",
-    logo: "/images/logos/placeholder-r4a.png",
+    logo: "/images/logos/image copy 6.png",
     points: [
       "Manage social for a pan-African renewable energy platform",
       "Turn technical clean energy topics into accessible educational content",

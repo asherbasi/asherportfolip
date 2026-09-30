@@ -16,7 +16,7 @@ type Project = {
 const portfolioItems: Project[] = [
   {
     title: "Carousel for Gallery of Code",
-    description: "A multi-slide carousel created for a Gallery of Code program and its audience.",
+    description: "A carousel that explained a Gallery of Code program to its audience.",
     category: "Social Content",
     accent: "bg-[#e4e3df]",
     mark: "01",
@@ -26,7 +26,7 @@ const portfolioItems: Project[] = [
   },
   {
     title: "Brand Storytelling",
-    description: "A visual storytelling post created to connect Gallery of Code with its audience.",
+    description: "A visual story that introduced a brand idea to Gallery of Code's audience.",
     category: "Content Creation",
     accent: "bg-[#dfe4df]",
     mark: "02",
@@ -36,7 +36,7 @@ const portfolioItems: Project[] = [
   },
   {
     title: "Brand Storytelling",
-    description: "A bold brand story designed to communicate an idea through strong visual direction.",
+    description: "A bold visual post that communicated a brand idea through strong creative direction.",
     category: "Content Creation",
     accent: "bg-[#e8dfc9]",
     mark: "03",
@@ -46,7 +46,7 @@ const portfolioItems: Project[] = [
   },
   {
     title: "GDG Community Event",
-    description: "Event coverage highlighting the Git and GitHub Workshop community experience.",
+    description: "Event content that highlighted the Git and GitHub Workshop experience.",
     category: "Community Engagement",
     accent: "bg-[#d8e1e3]",
     mark: "04",
@@ -56,7 +56,7 @@ const portfolioItems: Project[] = [
   },
   {
     title: "Edited Video for Product Shoot",
-    description: "A short-form product edit shaped for clear presentation and social engagement.",
+    description: "A product video edit that presented the shoot clearly for social audiences.",
     category: "Video Editing",
     platform: "Instagram / Facebook",
     accent: "bg-[#dcd3e3]",
@@ -67,7 +67,7 @@ const portfolioItems: Project[] = [
   },
   {
     title: "Edited Video for Product Shoot",
-    description: "A polished product video edit focused on rhythm, transitions, and visual clarity.",
+    description: "A polished product edit that used rhythm and transitions to drive attention.",
     category: "Video Editing",
     platform: "Instagram / Facebook",
     accent: "bg-[#d3dce3]",
@@ -75,6 +75,33 @@ const portfolioItems: Project[] = [
     mark: "06",
     href: "https://www.instagram.com/reel/DcRlU8Xoorm/?igsi=dHFxM3Q5MGl4dTlq",
     cta: "View Edit",
+  },
+  {
+    title: "Byomane",
+    description: "Content created for a wig coloring brand.",
+    category: "Social Content",
+    accent: "bg-[#e4e3df]",
+    mark: "07",
+    href: "#",
+    cta: "View Project",
+  },
+  {
+    title: "Renewables4Africa",
+    description: "Educational clean energy content.",
+    category: "Content Creation",
+    accent: "bg-[#dfe4df]",
+    mark: "08",
+    href: "#",
+    cta: "View Project",
+  },
+  {
+    title: "MOPO Project",
+    description: "Paid social ad creative that generated 350+ leads in two weeks.",
+    category: "Paid Social",
+    accent: "bg-[#e8dfc9]",
+    mark: "09",
+    href: "#",
+    cta: "View Project",
   },
 ];
 

@@ -16,7 +16,7 @@ export const Route = createFileRoute("/")({
       {
         name: "description",
         content:
-          "Portfolio of Asher Okwong, a Social Media Manager helping brands build communities and run social campaigns that turn attention into leads.",
+          "Asher Okwong is a Social Media Manager helping brands grow online through content, community and paid campaigns.",
       },
       {
         property: "og:title",
@@ -25,7 +25,7 @@ export const Route = createFileRoute("/")({
       {
         property: "og:description",
         content:
-          "Portfolio of Asher Okwong, a Social Media Manager helping brands build communities and run social campaigns that turn attention into leads.",
+          "Asher Okwong is a Social Media Manager helping brands grow online through content, community and paid campaigns.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
