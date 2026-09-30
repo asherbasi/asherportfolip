@@ -15,7 +15,7 @@ const experiences = [
   {
     organization: "MOPO Project, Tilk House",
     role: "Social Media Manager (Contract)",
-    logo: "/images/logos/placeholder-mopo.png",
+    logo: "https://images.pexels.com/photos/12504497/pexels-photo-12504497.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
     points: [
       "Ran a paid social campaign that generated 350+ leads in two weeks",
       "Planned and executed supporting content",

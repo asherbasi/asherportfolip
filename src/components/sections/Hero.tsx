@@ -34,10 +34,10 @@ export function Hero() {
               Contact Me
             </a>
             <a
-              href="#results"
+              href="#portfolio"
               className="inline-flex items-center justify-center gap-2 rounded-full border border-border bg-card px-7 py-3 text-sm font-semibold text-foreground transition-all hover:border-gold hover:text-gold-dark"
             >
-              View Results
+              View Works
               <ArrowDown className="h-4 w-4" />
             </a>
           </div>

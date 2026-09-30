@@ -76,33 +76,6 @@ const portfolioItems: Project[] = [
     href: "https://www.instagram.com/reel/DcRlU8Xoorm/?igsi=dHFxM3Q5MGl4dTlq",
     cta: "View Edit",
   },
-  {
-    title: "Byomane",
-    description: "Content created for a wig coloring brand.",
-    category: "Social Content",
-    accent: "bg-[#e4e3df]",
-    mark: "07",
-    href: "#",
-    cta: "View Project",
-  },
-  {
-    title: "Renewables4Africa",
-    description: "Educational clean energy content.",
-    category: "Content Creation",
-    accent: "bg-[#dfe4df]",
-    mark: "08",
-    href: "#",
-    cta: "View Project",
-  },
-  {
-    title: "MOPO Project",
-    description: "Paid social ad creative that generated 350+ leads in two weeks.",
-    category: "Paid Social",
-    accent: "bg-[#e8dfc9]",
-    mark: "09",
-    href: "#",
-    cta: "View Project",
-  },
 ];
 
 export function Portfolio() {
