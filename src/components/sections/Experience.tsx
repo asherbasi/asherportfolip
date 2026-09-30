@@ -13,7 +13,7 @@ const experiences = [
     ],
   },
   {
-    organization: "MOPO Project, Tilk House",
+    organization: "MOPO Project, Tilt House",
     role: "Social Media Manager (Contract)",
     logo: "https://images.pexels.com/photos/12504497/pexels-photo-12504497.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
     points: [
