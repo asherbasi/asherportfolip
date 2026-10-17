@@ -14,12 +14,13 @@ const experiences = [
   },
   {
     organization: "MOPO Project, Tilt House",
-    role: "Social Media Manager (Contract)",
+    role: "Social Media Manager / Community Manager (Contract)",
     logo: "https://images.pexels.com/photos/12504497/pexels-photo-12504497.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
     points: [
-      "Ran a paid social campaign that generated 350+ leads in two weeks",
-      "Planned and executed supporting content",
-      "Used performance data to improve results",
+      "Acted as social media and community manager on a campaign that generated 350+ leads in two weeks",
+      "Managed audience engagement and nurturing to convert interest into leads",
+      "Planned and executed supporting content that kept the community active",
+      "Collaborated with the campaign team to hit lead-generation goals",
     ],
   },
   {

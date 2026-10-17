@@ -21,10 +21,10 @@ export function Hero() {
             Asher Okwong
           </h1>
           <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-muted-foreground">
-            I help brands find their voice online and build communities that actually stick around. From content strategy to paid social campaigns, I turn scattered attention into real, measurable leads — combining data-driven targeting with storytelling that feels human.
+            I help brands find their voice online and build communities that actually stick around. From content strategy to community management, I turn scattered attention into real, measurable leads — combining data-driven insight with storytelling that feels human.
           </p>
           <p className="mt-5 text-sm font-medium tracking-wide text-foreground/70">
-            Social Media Management • Content Strategy • Paid Social
+            Social Media Management • Content Strategy • Community Management
           </p>
           <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
             <a
@@ -49,7 +49,7 @@ export function Hero() {
               4 brands managed
             </span>
             <span className="inline-flex items-center rounded-full bg-gold/10 px-4 py-1.5 text-xs font-semibold text-gold-dark">
-              Organic + paid social
+              Community-driven growth
             </span>
           </div>
         </AnimatedSection>
