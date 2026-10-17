@@ -21,7 +21,7 @@ export function Hero() {
             Asher Okwong
           </h1>
           <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-muted-foreground">
-            I help brands find their voice online and build communities that actually stick around. From content strategy to community management, I turn scattered attention into real, measurable leads — combining data-driven insight with storytelling that feels human.
+            I help brands find their voice online and build communities that reflect the brand. Through social media management, content creation, community management, and video editing, I turn scattered attention into real, measurable leads, combining data-driven insight with storytelling that feels human.
           </p>
           <p className="mt-5 text-sm font-medium tracking-wide text-foreground/70">
             Social Media Management • Content Strategy • Community Management

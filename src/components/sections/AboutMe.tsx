@@ -11,13 +11,14 @@ export function AboutMe() {
         </AnimatedSection>
         <AnimatedSection delay={100} className="mt-10 space-y-5 text-center text-base leading-relaxed text-muted-foreground md:text-lg">
           <p>
-            Hi, I&apos;m Asher, a Social Media Manager who helps brands grow online through content,
-            community and paid campaigns. I currently manage social media for Byomane,
-            Renewables4Africa and Gallery of Code, and I ran a paid campaign that generated 350+
-            leads in two weeks.
+            Hi, I&apos;m Asher, a Social Media Manager and Content Creator who helps brands grow online
+            through content creation, community management, and social media strategy. I have worked
+            with Byomane, Renewables4Africa, and Gallery of Code to grow their socials. I also served
+            as the social media and community manager on a paid campaign that generated 350+ leads
+            for MOPO in just two weeks.
           </p>
           <p>
-            I previously served as Head of Community Management at Google Developers Club, Nile
+            Before that, I was Head of Community Management at Google Developers Club, Nile
             University of Nigeria.
           </p>
         </AnimatedSection>
