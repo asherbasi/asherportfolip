@@ -15,13 +15,13 @@ export function Hero() {
       <div className="mx-auto w-full max-w-4xl px-4 py-20 text-center lg:px-8">
         <AnimatedSection>
           <span className="inline-block rounded-full bg-gold/10 px-3 py-1 text-xs font-semibold uppercase tracking-widest text-gold-dark">
-            Social Media Manager
+            Social Media Manager / Content Creator
           </span>
           <h1 className="mt-6 font-display text-5xl font-bold leading-[1.1] tracking-tight md:text-6xl lg:text-7xl">
             Asher Okwong
           </h1>
           <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-muted-foreground">
-            I build brand communities and run social campaigns that turn attention into leads.
+            I help brands find their voice online and build communities that actually stick around. From content strategy to paid social campaigns, I turn scattered attention into real, measurable leads — combining data-driven targeting with storytelling that feels human.
           </p>
           <p className="mt-5 text-sm font-medium tracking-wide text-foreground/70">
             Social Media Management • Content Strategy • Paid Social
